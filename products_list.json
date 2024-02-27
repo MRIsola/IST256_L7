@@ -1,0 +1,49 @@
+//variable storing product information
+var product = [
+	{
+		"productID": "01",
+		"type": "Desktop",
+		"make": "Alienware",
+		"model": "Aurora"
+	},
+	{
+		"productID": "02",
+		"type": "Laptop",
+		"make": "Lenovo",
+		"model": "Ideapad"
+	}
+]
+
+//jQuery search
+//I think what we'll need to do here is make the search function test for all 4 of these variables and then just return any matching result
+//.grep is the standard searching method in jQuery
+//Will also need to force the .js to ignore capitalization, I think it's toLowerCase()
+var findID = "01";
+var findType = "desktop";
+var findMake = "alienware";
+var findModel = "aurora";
+
+var product = $.grep(product, function(p)
+					{return p.productID == findID;});
+
+var product = $.grep(product, function(p)
+					{return p.type == findType;});
+
+var product = $.grep(product, function(p)
+					{return p.make == findMake;});
+
+var product = $.grep(product, function(p)
+					{return p.model == findModel;});
+
+//jQuery update
+//Will use the updateID value to choose which object to update, updatedType will determine variable being updated, updatedValue will be the new value
+//updatedType will need .js rules forcing it to match the value name's format
+//We could alternatively write the same function multiple times, once for each update field
+var updateID = "01";
+var updatedType = "new type";
+var updatedValue = "x";
+$.each(product, function(a, b){
+	if(b.productID == updateID){
+		b.updatedType == updatedValue;
+	}
+});
