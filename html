@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <!-- Bootstrap for CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Management</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="search">
+                    <h2>Search Product</h2>
+                    <input type="text" class="form-control" id="searchID" placeholder="Product ID">
+                    <input type="text" class="form-control" id="searchdescription" placeholder="Product description">
+                    <input type="text" class="form-control" id="searchcategory" placeholder="Product category">
+                    <input type="text" class="form-control" id="searchmeasurement" placeholder="Product unit of measure">
+                    <input type="text" class="form-control" id="searchprice" placeholder="Product price">
+                    <button id="searchbtn" class="btn btn-primary mt-3">Search</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="update">
+                    <h2>Update Product</h2>
+                    <input type="text" class="form-control" id="updateID" placeholder="Product ID">
+                    <input type="text" class="form-control" id="updatedescription" placeholder="Product description">
+                    <input type="text" class="form-control" id="updatecategory" placeholder="Product category">
+                    <input type="text" class="form-control" id="updatemeasurement" placeholder="Product unit of measure">
+                    <input type="text" class="form-control" id="updateprice" placeholder="Product price">
+                    <button id="updatebtn" class="btn btn-primary mt-3">Update</button>
+                </div>
+            </div>
+        </div>
+        <div class="add mt-4">
+            <h2>Add New Product</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="adddescription" placeholder="Product description">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="addcategory" placeholder="Product category">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="addmeasurement" placeholder="Product unit of measure">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="addprice" placeholder="Product price">
+                </div>
+            </div>
+            <button id="addbtn" class="btn btn-success mt-3">Add Product</button>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="store.js"></script>
+</body>
+</html>
